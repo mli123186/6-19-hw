@@ -1,7 +1,7 @@
-//console.log('hw6-19');
+// console.log('hw6-19');
 
-//Easy Going
-//1. Write a for loop that will log the numbers 1 through 20.
+// Easy Going
+// 1. Write a for loop that will log the numbers 1 through 20.
 
 for (let i = 1; i <= 20; i++) {
 	console.log(`numbers: ${i}`);
@@ -31,18 +31,27 @@ for (let i = 1; i < 21; i++) {
 //or "...why does the red dot always get away..." at random.
 
 
-// const randomWord = ["..human...why you taking pictures of me?...", "...the catnip made me do it...", "...why does the red dot always get away..."];
-// for (let i = 1; i < 21; i++) {
-// 	if (i % 2 === 0) {
-// 		console.log(`${randmWord.Math.random()}`);
+const randomWord = [
+	"..human...why you taking pictures of me?...", 
+	"...the catnip made me do it...", 
+	"...why does the red dot always get away..."
+];
+for (let i = 1; i < 21; i++) {
+	
+	if (i % 2 === 0) {
 
-// 	}
-// };
-//not sure yet
+		const randomN = randomWord[Math.floor(Math.random() * randomWord.length)];
+		console.log(randomN);
+
+	} else {
+		console.log("Love me, pet me! HSSSSSS!");
+	}
+};
 
 
-//Fizz Buzz
-//1. Write a javascript application that logs all numbers from 1 - 100.
+
+// Fizz Buzz
+// 1. Write a javascript application that logs all numbers from 1 - 100.
 for (let i = 1; i <= 100; i++) {
 
 	console.log(`${i}`);
@@ -104,7 +113,7 @@ jimHaff.pop();
 jimHaff.push("Denver", "Lasvagas", "New York");
 console.log(jimHaff);
 
-//6. Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now,
+// 6. Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now,
 // remove it from the array using .splice()
 jimHaff.splice(2, 1);
 console.log(jimHaff);
@@ -123,10 +132,10 @@ for (let i = 0; i < ninjaTurtle.length; i++) {
 
 };
 
-// //3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, 
-// //make the letters alternate back and forth between uppercase and lowercase.
+//3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, 
+//make the letters alternate back and forth between uppercase and lowercase.
 
-// //Return of the Closets
+//Return of the Closets
 const kristynsCloset = [
   "left shoe",
   "cowboy boots",
@@ -158,16 +167,49 @@ const thomsCloset = [
   ]
 ];
 
-// //Alien Attire
-// //1.Kristyn's left shoe has traveled through time and space and turned up 
-// //in Thom's accessories drawer! Remove Kristyn's shoe from the array 
-// //and save it to the variable kristynsShoe. 
-// //Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+//Alien Attire
+//1.Kristyn's left shoe has traveled through time and space and turned up 
+//in Thom's accessories drawer! Remove Kristyn's shoe from the array 
+//and save it to the variable kristynsShoe. 
+//Use that variable to add Kristyn's lost shoe to Thom's accessories array.
+
+const kristynsShoe = kristynsCloset.shift();
+console.log(kristynsShoe);
+thomsCloset[2].push(kristynsShoe);
+console.log(thomsCloset);
+
+//Dress em Up
+//1. Modify your code to put together 3 separate outfits for Kristyn and Thom.
+// Put the output in a sentence to tell us what we'll be wearing. Mix and match!
+
+//Dirty Laundry
+//1.Time to do laundry - loop through Kristyn's closet and log the sentence 
+//"WHIRR: Now washing (item)" for each item in the array
+
+for (let i = 0; i < kristynsCloset.length; i++) {
+	console.log(`WHIRR: Now washing ${kristynsCloset[i]}`);
+}
+
+//Inventory
+//2. Thom wants to do inventory on his closet. Using bracket notation, 
+//log the arrays (not the elements in the arrays) containing all of Thom's shirts, pants, and accessories.
 
 
+const shirts = []; 
+const pants = [];
+const accessories = [];
 
-// //Multiples of 3 and 5
-//Find the sum of all the multiples of 3 or 5 below 1000.
+shirts.push(thomsCloset[0]);
+pants.push(thomsCloset[1]);
+accessories.push(thomsCloset[2]);
+
+
+console.log(shirts);
+console.log(pants);
+console.log(accessories);
+
+// Multiples of 3 and 5
+// Find the sum of all the multiples of 3 or 5 below 1000.
 let sum = 0;
 for (let i = 1; i < 1000; i++) {
 	if (i % 5 === 0 || i % 3 === 0) {
