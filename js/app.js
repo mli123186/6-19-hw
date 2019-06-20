@@ -81,61 +81,61 @@ console.log(kenny);
 //that his age is 186, 
 //and write your code to just make him a year older than whatever age he was.
 
-// jimClark[1] = jimClark[1] + 1;
-// console.log(jimClark);
+jimClark[1] = jimClark[1] + 1;
+console.log(jimClark);
 
-// //3. Ryan is Batman maybe. Or possibly Robin.
-// // Change Ryan's hometown from "Denver" to "Gotham City".
+//3. Ryan is Batman maybe. Or possibly Robin.
+// Change Ryan's hometown from "Denver" to "Gotham City".
 
-// ryan[2] = "Gotham City";
-// console.log(ryan);
+ryan[2] = "Gotham City";
+console.log(ryan);
 
-// //4. Reuben left Durham 5 years ago to come to Chicago. First, remove "Durham" from Reuben's array, and then add "Chicago". 
-// //(Note: remove and then add is different from simply changing the value at that index.)
-// reuben.pop();
-// reuben.push("Chicago");
-// console.log(reuben);
+//4. Reuben left Durham 5 years ago to come to Chicago. First, remove "Durham" from Reuben's array, and then add "Chicago". 
+//(Note: remove and then add is different from simply changing the value at that index.)
+reuben.pop();
+reuben.push("Chicago");
+console.log(reuben);
 
-// //5. Jim Haff could be literally anywhere in the world. 
-// //Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine,
-// // but see if you can do it in one line of code
+//5. Jim Haff could be literally anywhere in the world. 
+//Remove "All cities" from his array, then pick any 3 cities you like, and add them to Jim's array. If you did it in 3 lines of code that's fine,
+// but see if you can do it in one line of code
 
-// jimHaff.pop();
-// jimHaff.push("Denver", "Lasvagas", "New York");
-// console.log(jimHaff);
+jimHaff.pop();
+jimHaff.push("Denver", "Lasvagas", "New York");
+console.log(jimHaff);
 
-// //6. Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now,
-// // remove it from the array using .splice()
-// jimHaff.splice(2, 1);
-// console.log(jimHaff);
+//6. Bonus: Whoops! Jim Haff is actually only allowed to be in one of two cities. Whatever the first of the 3 cities for Jim Haff is now,
+// remove it from the array using .splice()
+jimHaff.splice(2, 1);
+console.log(jimHaff);
 
 // //Yell at the Ninja Turtles
 // //1. Create an array with the members of the ninja turtles 
-// //(Donatello, Leonardo, Raphael, Michaelangelo)
-// const ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+//(Donatello, Leonardo, Raphael, Michaelangelo)
+const ninjaTurtle = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
 // // 2. Use a for loop to call .toUpperCase() 
 // //on each of them and print out the result.
 
-// for (let i = 0; i < ninjaTurtle.length; i++) {
+for (let i = 0; i < ninjaTurtle.length; i++) {
 
-// 	console.log(`${ninjaTurtle[i].toUpperCase()}`);
+	console.log(`${ninjaTurtle[i].toUpperCase()}`);
 
-// };
+};
 
 // //3. Bonus: Modify the answer you just wrote. Instead of all letters being uppercase, 
 // //make the letters alternate back and forth between uppercase and lowercase.
 
 // //Return of the Closets
-// const kristynsCloset = [
-//   "left shoe",
-//   "cowboy boots",
-//   "right sock",
-//   "GA hoodie",
-//   "green pants",
-//   "yellow knit hat",
-//   "marshmallow peeps"
-// ];
+const kristynsCloset = [
+  "left shoe",
+  "cowboy boots",
+  "right sock",
+  "GA hoodie",
+  "green pants",
+  "yellow knit hat",
+  "marshmallow peeps"
+];
 
 // // Thom's closet is more complicated. Check out this nested data structure!!
 const thomsCloset = [
